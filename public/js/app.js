@@ -1,1 +1,1 @@
-var app = angular.module('FlashCards', []);
+var app = angular.module('ChewZ', []);

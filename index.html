@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flash Cards</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Chew-Z! A Choose Your Own Adventure Generator</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <!-- Library -->
     <script src="js/lib/angular.js"></script>
     <!-- Main application file -->
     <script src="js/app.js"></script>
     <!-- Controllers -->
-    <script src="js/controllers/FlashCardController.js"></script>
-    <script src="js/controllers/MainController.js"></script>
-    <script src="js/controllers/StatsController.js"></script>
-    <!-- Factories -->
-    <script src="js/factories/FlashCardsFactory.js"></script>
-    <script src="js/factories/ScoreFactory.js"></script>
-    <script src="js/directives/loader/loader.js"></script>
-    <script src="js/directives/flash-cards/flash-cards.js"></script>
-    <script src="js/directives/border/borderDirective.js"></script>
-    <script src="js/controllers/cardViewController.js"></script>
+    <script src="js/controllers/chewzController.js"></script>
+    <script src="js/factories/GameFactory.js"></script>
 </head>
-<body ng-app="FlashCards">
-<div ng-controller="cardViewController">
+<body ng-app="ChewZ">
+<div ng-controller="chewzController">
 
-    <ng-include src="'views/formbuilder.html'" ng-show="!isVisible"></ng-include>
-    <ng-include src="'views/cardview.html'" ng-show="isVisible"></ng-include>
+    <ng-include src="'views/gamebuilder.html'"></ng-include>
+    <ng-include src="views/games.html"></ng-include>
 
 </div>
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 
 </html>

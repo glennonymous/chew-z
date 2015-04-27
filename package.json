@@ -1,12 +1,12 @@
 {
   "name": "Chew-Z",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "A choose your own adventure game",
   "main": "angular.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Joe Alves <databentpx@gmail.com> (http://www.github.com/joedotjs)",
+  "author": "Glenn Thomas Davis <glenn@gdcreative.com> (http://www.github.com/glennonymous)",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^2.9.7",

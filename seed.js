@@ -152,7 +152,7 @@ var cards = [
 var bluebird = require('bluebird');
 var mongoose = require('mongoose');
 
-var FlashCardModel = require('./server/models/flash-card-model');
+var FlashCardModel = require('./server/models/game-model');
 
 mongoose.connect('mongodb://localhost/flash-cards');
 
