@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/flash-cards');
+mongoose.connect('mongodb://localhost/chew-z');
 
 var server = require('./server');
 

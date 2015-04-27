@@ -13,3 +13,6 @@ app.use(express.static(publicPath));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', function (req, res) {
+    res.sendFile(indexHtmlPath);
+});

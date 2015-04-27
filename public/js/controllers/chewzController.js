@@ -1,21 +1,27 @@
-app.controller('chewzController', function ($scope, GameFactory) {
+app.controller('chewzController', function ($scope) {
 
-    $scope.games = [];
+    $scope.games = {
+        data: []
+    };
 
     var gameObj = function(){
-        this.title = "";
+        this.title = "Choose a title";
         this.passages = [];
         this.passages.push(new passageObj());
     };
 
     var passageObj = function(){
-        this.prev;
-        this.text = "";
+        this.prev = null;
+        this.text = "Enter text here";
         this.links = [];
     };
 
     $scope.createGame = function(){
-        $scope.games.push(new gameObj);
+        $scope.games.data.push(new gameObj());
+    };
+
+    $scope.addLink = function(text){
+
     };
 
 });
