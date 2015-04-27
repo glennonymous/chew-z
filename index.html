@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flash Cards</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!-- Library -->
+    <script src="js/lib/angular.js"></script>
+    <!-- Main application file -->
+    <script src="js/app.js"></script>
+    <!-- Controllers -->
+    <script src="js/controllers/FlashCardController.js"></script>
+    <script src="js/controllers/MainController.js"></script>
+    <script src="js/controllers/StatsController.js"></script>
+    <!-- Factories -->
+    <script src="js/factories/FlashCardsFactory.js"></script>
+    <script src="js/factories/ScoreFactory.js"></script>
+    <script src="js/directives/loader/loader.js"></script>
+    <script src="js/directives/flash-cards/flash-cards.js"></script>
+    <script src="js/directives/border/borderDirective.js"></script>
+    <script src="js/controllers/cardViewController.js"></script>
+</head>
+<body ng-app="FlashCards">
+<div ng-controller="cardViewController">
+
+    <ng-include src="'views/formbuilder.html'" ng-show="!isVisible"></ng-include>
+    <ng-include src="'views/cardview.html'" ng-show="isVisible"></ng-include>
+
+</div>
+
+</body>
+
+</html>

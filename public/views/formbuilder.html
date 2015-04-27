@@ -1,0 +1,18 @@
+<div ng-controller="newCardController">
+    <div ng-controller="StatsController" id="statistics">
+        <div id="scoreboard">
+            <h3 class="builder-link" ng-click="changeVisibility()">Go Home!</h3>
+        </div>
+    </div>
+
+    <form name="newcard">
+        Question: <input name="question" required type="text" ng-model="newCard.question">
+        <select title="Category" name="category" ng-model="newCard.category">
+            <option name="MongoDB">MongoDB</option>
+            <option name="MongoDB">Express</option>
+            <option name="MongoDB">Angular</option>
+            <option name="MongoDB">Node</option>
+        </select>
+    </form>
+    <pre>{{ newCard }}</pre>
+</div>
